@@ -9,4 +9,11 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+
+numbers.sort()
+length = len(numbers)
+
+if (length % 2 == 1):
+    print(numbers[(length-1)/2])
+else:
+    print((numbers[length/2]) + numbers[length/2 - 1])/2)
